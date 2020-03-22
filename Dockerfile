@@ -11,9 +11,9 @@ ENV PYTHONUNBUFFERED 1
 ADD requirements.txt .
 RUN python -m pip install -r requirements.txt
 
-WORKDIR /src
+RUN mkdir /kafka_python
+WORKDIR /kafka_python
 
-ADD ./src /src
+ADD ./ /kafka_python
 
-# During debugging, this entry point will be overridden. For more information, refer to https://aka.ms/vscode-docker-python-debug
-# CMD ["python", "src/upload_consumer_producer.py"]
+

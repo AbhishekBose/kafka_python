@@ -12,6 +12,14 @@ from datetime import datetime
 import os
 
 
+with open("../config.yml", 'r') as ymlfile:
+    topic_list = yaml.load(ymlfile)
+
+
+CONSUMER_TOPIC = topic_list[ENV]['AOCR']['fetch_data_consumer']
+PRODUCER_TOPIC = topic_list[ENV]['AOCR']['training_completed_producer']
+
+
 
 #function to add two numbers
 def add(x,y):
