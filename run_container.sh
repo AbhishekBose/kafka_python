@@ -1,0 +1,1 @@
+docker run -it -d --name=python_kafka -v /home/abhishek/kafka_python:/kafka_python --network=host python_kafka

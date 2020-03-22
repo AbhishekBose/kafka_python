@@ -1,7 +1,7 @@
 PYTHON_1:
   BROKER: 'localhost:9092'
-  PRODUCER: 'PYTHON_2'
+  PRODUCER: 'python_2'
 
 PYTHON_2:
   BROKER: 'localhost:9092'
-  CONSUMER: 'PYTHON_2'
+  CONSUMER: 'python_2'

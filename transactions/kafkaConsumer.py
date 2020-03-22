@@ -8,7 +8,7 @@ import time
 
 
 class kafkaConsumer:
-    def __init__(self,topic,client_id,group_name,broker,input_db_obj):
+    def __init__(self,topic,client_id,group_name,broker,input_db_obj='dummy_obj'):
         self.topic = topic
         self.client_id = client_id
         self.broker = broker
